@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <p>Amazon Clone</p>
+      <p>Amazon</p>
     </div>
   );
 }
