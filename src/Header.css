@@ -16,7 +16,7 @@
 }
 .header__option {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }    
 .header__optionLineOne {
     font-size: 10px;
