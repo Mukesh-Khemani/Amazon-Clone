@@ -1,3 +1,9 @@
+.home {
+    max-width: 1500px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
 .home__image {
     width: 100%; 
     mask-image: linear-gradient( to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
