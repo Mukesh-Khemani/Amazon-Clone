@@ -1,10 +1,14 @@
 import React from 'react'
 import "./Product.css"
 
-function Product() {
+function Product({id, title, image, price, rating }) {
     return (
-        <div>
-            
+        <div className="product">
+            <p>{title}</p>
+            <p className="product__">
+                
+            </p>
+
         </div>
     )
 }
