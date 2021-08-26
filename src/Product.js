@@ -30,7 +30,7 @@ function Product({id, title, image, price, rating }) {
                 .map((_) => (
                     <p>⭐</p>
                 ))}
-        </div>
+          </div>
           </div>
           <img src={image} alt="" />
           <button onClick={addToBasket}>Add to Basket</button>
