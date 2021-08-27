@@ -30,7 +30,6 @@ function Checkout() {
                         />
                     ))}
                  </div>
-                 
                 )}
           </div>
             {basket.length > 0 &&(
