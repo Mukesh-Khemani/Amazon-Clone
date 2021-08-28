@@ -1,5 +1,5 @@
-import firebase from 'firebase'
-const firebaseApp = firebaseinitializeApp( {
+import firebase from "firebase";
+const firebaseApp = firebase.initializeApp( {
     apiKey: "AIzaSyDl0qsWiN_h_ZpIOfEtct2USxfPlpJLJIc",
     authDomain: "clone-510c3.firebaseapp.com",
     projectId: "clone-510c3",
@@ -9,5 +9,6 @@ const firebaseApp = firebaseinitializeApp( {
     measurementId: "G-9T809SJRJF"
   });
   
-  const auth = firebase.auth()
-  export { auth }
+  const auth = firebase.auth();
+
+  export { auth };

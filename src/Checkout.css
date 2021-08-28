@@ -1,5 +1,5 @@
 .checkout__ad {
-    width: 100%;
+    width: 95%;
     margin: 0;
     display: flex;
     height: 300px;
@@ -15,4 +15,7 @@
     background-color: white;
     height: max-content;
     padding: 20px;
+}
+.banner__container {
+    display: flex;
 }
