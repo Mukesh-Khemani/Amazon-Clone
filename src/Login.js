@@ -8,9 +8,21 @@ function Login() {
     const [password, setPassword]=useState("")
     const login=event => {
         event.preventDefault();
+        auth
+        .signInWithEmailAndPassword(email,password)
+        .then((auth) =>{
+
+        })
+        .catch((e) => alert(e.message))
     }
     const register=event => {
         event.preventDefault();
+        auth
+        .createUserWithEmailAndPassword(email,password)
+        .then((auth) =>{
+
+        })
+        .catch((e) => alert(e.message))
     }
     return (
         <div className="login">
