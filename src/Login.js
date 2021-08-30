@@ -4,29 +4,34 @@ import { Link, useHistory } from "react-router-dom"
 import { auth } from "./firebase"
 
 function Login() {
-    const [email, setEmail]=useState("")
-    const [password, setPassword]=useState("")
-    const login=event => {
+    const history = useHistory()
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    
+    const login = event => {
         event.preventDefault();
         auth
         .signInWithEmailAndPassword(email,password)
-        .then((auth) =>{
-
+        .then((auth) => {
+            history.push("/")
         })
         .catch((e) => alert(e.message))
     }
+
     const register=event => {
         event.preventDefault();
         auth
         .createUserWithEmailAndPassword(email,password)
         .then((auth) =>{
-
+            history.push("/")
         })
         .catch((e) => alert(e.message))
     }
+
     return (
         <div className="login">
-            <Link to ="/">
+            <Link to="/">
                 <img 
                     className="login__logo"
                     src="https://lh3.googleusercontent.com/proxy/g-uh59HKBOFD3LAUW2_nPUW3SAAkao00NDc_crFGPySraZ4NokOcsgjdMGXUWmZeGqvJEtPd4lcpNvCpjhOZ49Ee-9NxJzkxghKFPGU38qIvlGmlFHKs83i0By4weCZZBvjuklIfQtq5rpj4BKFhzMpycEuh"

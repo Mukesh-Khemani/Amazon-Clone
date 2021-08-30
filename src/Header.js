@@ -13,7 +13,9 @@ function Header() {
             auth.signOut();
         }
     }
-
+    const logout=() => {
+       auth.signOut();
+    }
     return <nav className="header">
     <Link to="/"> 
         <img className="header__logo" 
@@ -30,7 +32,7 @@ function Header() {
         <Link to={ !user && "/login" } className="header__link">
             <div className="header__option">
                 <p className="header__optionLineOne">Hello{user?.email}</p>
-                <p className="header__optionLineTwo">{user ? 'Sign Out':'Sign In' }</p>
+                <p className="header__optionLineTwo">{user ? <p onClick={logout}>Sign Out</p>:'Sign In' }</p>
             </div>
         </Link>
         <Link to="/" className="header__link">
